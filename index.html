@@ -140,7 +140,7 @@
 							<img class=" cpecializm__img" src="./images/box/box-1-img.jpg" alt="розробка desktop" width="370" height="294" />
 
 							<!-- Розмітка блоку оверлей із текстом -->
-							<div class="cpecializm__wrapper">
+							<div class="cpecializm__overlay">
 								<p class="cpecializm__text">Десктопні додатки</p>
 							</div>
 						</li>
@@ -148,7 +148,7 @@
 							<img class=" cpecializm__img" src="./images/box/box-2-img.jpg" alt="розробка app" width="370" height="294" />
 							
 							<!-- Розмітка блоку оверлей із текстом -->
-							<div class="cpecializm__wrapper">
+							<div class="cpecializm__overlay">
 								<p class="cpecializm__text">Мобільні додатки</p>
 							</div>
 						</li>
@@ -156,7 +156,7 @@
 							<img class=" cpecializm__img" src="./images/box/box-3-img.jpg" alt="дизайн сайту" width="370" height="294" />
 							
 							<!-- Розмітка блоку оверлей із текстом -->
-							<div class="cpecializm__wrapper">
+							<div class="cpecializm__overlay">
 								<p class="cpecializm__text">Дизайнерські рішення</p>
 							</div>
 						</li>
@@ -600,13 +600,13 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="hero-modal-close" data-modal-close>
-					<svg class="modal-icon" width="14px" height="14px">
+				<button class="modal__close" data-modal-close>
+					<svg class="modal__close-icon" width="14px" height="14px">
 						<use href="./images/svg/icons.svg#modalicon-close"></use>
 					</svg>
 				</button>
 
-				<strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+				<strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
 
 				<form class="modal-form" name="modal-form" autocomplete="on">
 					<!--var 1-->
@@ -620,34 +620,34 @@
 
 					<!--var 2-->
 
-					<div class="modal-form-group" role="group">
-						<label class="modal-form-label" for="user_name">Ім'я</label>
-						<div class="modal-form-wrapper">
-							<input class="modal-form-field" type="text" name="user_name" id="user_name" />
-							<svg class="modal-form-icon" width="18px" height="18px">
+					<div class="form-group" role="group">
+						<label class="form-group__label" for="user_name">Ім'я</label>
+						<div class="form-group__wrapper">
+							<input class="form-group__field" type="text" name="user_name" id="user_name" />
+							<svg class="form-group__icon" width="18px" height="18px">
 								<use href="./images/svg/icons.svg#modal-icon-person"></use>
 							</svg>
 						</div>
 
-						<label class="modal-form-label" for="user_tel">Телефон</label>
-						<div class="modal-form-wrapper">
-							<input class="modal-form-field" type="tel" name="user_tel" id="user_tel" />
-							<svg class="modal-form-icon" width="18px" height="18px">
+						<label class="form-group__label" for="user_tel">Телефон</label>
+						<div class="form-group__wrapper">
+							<input class="form-group__field" type="tel" name="user_tel" id="user_tel" />
+							<svg class="form-group__icon" width="18px" height="18px">
 								<use href="./images/svg/icons.svg#modal-icon-phone"></use>
 							</svg>
 						</div>
 
-						<label class="modal-form-label" for="user_email">Пошта</label>
-						<div class="modal-form-wrapper">
-							<input class="modal-form-field" type="email" name="user_email" id="user_email" />
-							<svg class="modal-form-icon" width="18px" height="18px">
+						<label class="form-group__label" for="user_email">Пошта</label>
+						<div class="form-group__wrapper">
+							<input class="form-group__field" type="email" name="user_email" id="user_email" />
+							<svg class="form-group__icon" width="18px" height="18px">
 								<use href="./images/svg/icons.svg#modal-icon-email"></use>
 							</svg>
 						</div>
 
-						<label class="modal-form-label" for="user_message">Коментар</label>
+						<label class="form-group__label" for="user_message">Коментар</label>
 						<textarea
-							class="modal-form-message"
+							class="form-group__message"
 							placeholder="Введіть текст"
 							name="message-area"
 							id="user_message"
@@ -655,18 +655,18 @@
 						></textarea>
 					</div>
 
-					<div class="modal-checkbox-wrapper" role="group">
+					<div class="modal-checkbox" role="group">
 						<input class="checkbox-input" type="checkbox" id="user_agreement" />
-						<svg class="checkbox-icon-check" width="16" height="15">
+						<svg class="checkbox-input__icon" width="16" height="15">
 							<use href="./images/svg/icons.svg#icon-checkbox-icon-check-f"></use>
 						</svg>
-						<label class="checkbox-label" for="user_agreement">
+						<label class="modal-checkbox__label" for="user_agreement">
 							Погоджуюся з розсилкою та приймаю
-							<a class="checkbox-agreement" href="">Умови договору</a>
+							<a class="modal-checkbox__agreement" href="">Умови договору</a>
 						</label>
 					</div>
 
-					<button class="modal-form-btn" type="submit">Відправити</button>
+					<button class="modal-form__btn" type="submit">Відправити</button>
 				</form>
 			</div>
 		</div>
