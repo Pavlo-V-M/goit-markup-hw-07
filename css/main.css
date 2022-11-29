@@ -1022,7 +1022,7 @@ img {
           justify-content: center;
 }
 
-.filter li:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
