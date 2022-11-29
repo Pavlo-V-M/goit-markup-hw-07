@@ -1,0 +1,47 @@
+
+.clients {
+  background-color: var(--main-background-color);
+  padding: 94px 0 94px 0;
+}
+
+.clients__list {
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__link {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--socials-link-color);
+  color: var(--socials-link-color);
+
+  transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: var(--comon-blue);
+  color: var(--comon-blue);
+}
+
+.clients__link:hover,
+.clients__link:focus .clients__icon {
+  fill: var(--comon-blue);
+}
+
+.clients__icon {
+  fill: currentColor;
+}
